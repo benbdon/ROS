@@ -13,3 +13,6 @@ while not rospy.is_shutdown(): #run until shutdown
     pub.publish(count) # publish current value of counter
     count += 1 # increment counter
     rate.sleep() # sleep long enough to ensure this loop happens at 2 Hz
+
+
+#test 
