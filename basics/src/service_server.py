@@ -13,7 +13,7 @@ def count_words(request): #call back function that counts words in a string
 rospy.init_node('service_server') #initialize node
 
 service = rospy.Service('word_count', WordCount, count_words) # advertise the service (assign a name for the
-                                                            # service, map it to a service-defintion file of I/O 
+                                                            # service, map it to a service-definition file of I/O 
                                                             # names and types, callback function name)
 
 rospy.spin() #keep node alive (watching for callbacks) until shutdown
