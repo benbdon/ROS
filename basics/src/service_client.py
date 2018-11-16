@@ -15,7 +15,7 @@ WordCount) # turn the service into a local function
 
 words = ' '.join(sys.argv[1:]) # read in all the arguments from console
 
-request = WordCountRequest(words) # 
+request = WordCountRequest(words) # construct a service request object
 
 word_count = word_counter(request) # call the service name wrapped up like a local function
 
