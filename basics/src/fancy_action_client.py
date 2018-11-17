@@ -24,7 +24,7 @@ client.send_goal(goal, feedback_cb=feedback_cb)
 #client.cancel_goal()
 
 client.wait_for_result()
-print('[Result] State: %d'%(client.get_state()))
+print('[Result] State: %d'%(client.get_state())) # possible states: (2=PREEMPTED, 3=SUCCEEDED, 4=ABORTED)
 print('[Result] Status: %s'%(client.get_goal_status_text()))
 print('[Result] Time elapsed: %f'%(client.get_result().time_elapsed.to_sec()))
 print('[Result] Updates sent: %d'%(client.get_result().updates_sent))
