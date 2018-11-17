@@ -106,7 +106,6 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES basics
-#  CATKIN_DEPENDS rospy
 #  DEPENDS system_lib
   CATKIN_DEPENDS 
   message_runtime
