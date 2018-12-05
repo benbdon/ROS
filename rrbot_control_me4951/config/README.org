@@ -1,0 +1,4 @@
+Use this directory for storing configuration files related to configuring
+controllers in the [[http://nu-msr.github.io/embedded-course-site/homework/gazebo_ros_control.html#orgheadline3][second part of the assignment]].
+
+See the [[https://github.com/ros-simulation/gazebo_ros_demos/tree/master/rrbot_control][rrbot_control package]] for reference.

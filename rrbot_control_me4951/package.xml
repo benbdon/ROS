@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>rrbot_control_me495</name>
+  <version>1.0.0</version>
+  <description>
+	This package implements a custom plugin to be used with the rrbot Gazebo tutorial http://gazebosim.org/tutorials?tut=ros_control
+  </description>
+  <maintainer email="jarvis@vedauwoo.nu">jarvis</maintainer>
+
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>gazebo_ros</depend>
+  <depend>gazebo_msgs</depend>
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>ros_control</depend>
+  <depend>ros_controllers</depend>
+  <build_depend>message_generation</build_depend>
+  <exec_depend>controller_manager</exec_depend>
+  <exec_depend>joint_state_controller</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <build_export_depend>message_runtime</build_export_depend>
+
+
+
+  <export>
+	<gazebo_ros plugin_path="${prefix}/lib" gazebo_media_path="${prefix}" />
+  </export>
+</package>
