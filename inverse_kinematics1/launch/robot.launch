@@ -1,0 +1,7 @@
+<launch>
+  <param name="robot_description" textfile="$(find inverseKinematics)/urdf/my_2r.urdf"/>
+  <node name="ben" pkg="inverseKinematics" type="joint_publisher.py" ns="space"/>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" ns="space"/>
+  <node name="coord_publisher" pkg="inverseKinematics" type="marker_trail.py" ns="space"/>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find inverseKinematics)/rviz/config.rviz" required="true"/>
+</launch>
