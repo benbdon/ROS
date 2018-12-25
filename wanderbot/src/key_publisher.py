@@ -14,5 +14,4 @@ if __name__=='__main__':
         if select.select([sys.stdin],[],[],0)[0] == [sys.stdin]:
             key_pub.publish(sys.stdin.read(1))
         rate.sleep()
-
     termios.tcsetattr(sys.stdin,termios.TCSADRAIN,old_attr)
