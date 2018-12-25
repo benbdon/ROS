@@ -21,7 +21,7 @@ rate = rospy.Rate(10)
 
 while not rospy.is_shutdown():
     if driving_forward:
-        if (g_range_ahead < 0.8 or rospy.Time.now() > state_change_time: #If there's no obstacle within 0.8m or the robot has been moving for 10 seconds, stop moving.
+        if (g_range_ahead < 0.8 or rospy.Time.now() > state_change_time: 
             driving_forward = False
             state_change_time = rospy.Time.now() + rospy.Duration(5) #Stop moving for 5 seconds.
     else: # we're not driving_forward
