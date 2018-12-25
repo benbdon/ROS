@@ -9,8 +9,8 @@ def scan_callback(msg):
                             # We could decide to use the middle element of the ranges array instead with 
                             # range_ahead = msg.ranges[len(msg.ranges)/2]. Alternatively we could use 
                             # msg.range_min to use the minimum value the laser scanner is capable of sensing 
-                            # (assuming our driver has properly set this). How would these choices affect the TurtleBot's behavior.
-
+                            # (assuming our driver has properly set this).
+                            
 g_range_ahead = 1 # anything to start
 scan_sub = rospy.Subscriber('scan', LaserScan, scan_callback)
 cmd_vel_pub = rospy.Publisher('cmd_vel', Twist, queue_size=1)    
