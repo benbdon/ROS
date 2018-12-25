@@ -4,7 +4,7 @@ from geometry_msgs.msg import Twist
 
 rospy.init_node('red_light_green_light')
 cmd_vel_pub = rospy.Publisher('cmd_vel', Twist, queue_size=1) # queue_size=1 tells rospy to only buffer a 
-                    #single outbound message. In casethe node sendingthemessages is transmitting 
+                    #single outbound message. In casethe node sending the messages is transmitting 
                     #at higher rate than the receiving node(s) can receive them, rospy will simply 
                     # drop any messages beyond the queue_size.
 
